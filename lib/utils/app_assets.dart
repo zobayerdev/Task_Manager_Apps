@@ -5,6 +5,6 @@ class AppAssets {
   static const String backgroundImageDark = "$imagePath/darkBackground.svg";
   static const String logo = "$imagePath/logo.svg";
   static const String userDefaultImage = "$imagePath/user.png";
-  static const String emptyList = "$imagePath/empty.svg";
+  //static const String emptyList = "$imagePath/empty.svg";
   static const String noInternet = "$imagePath/noInternet.svg";
 }

@@ -39,13 +39,6 @@ class _TaskProgressScreenState extends State<TaskProgressScreen> {
                     null) {
                   return const LoadingLayout();
                 }
-                if (viewModel
-                    .taskDataByStatus[AppStrings.taskStatusProgress]!.isEmpty) {
-                  return const FallbackWidget(
-                    noDataMessage: AppStrings.noProgressTaskData,
-                    asset: AppAssets.emptyList,
-                  );
-                }
                 return TaskListCard(
                   screenWidth: screenWidth,
                   taskData: viewModel

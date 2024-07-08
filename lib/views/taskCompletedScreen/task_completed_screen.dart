@@ -40,13 +40,6 @@ class _TaskCompletedScreenState extends State<TaskCompletedScreen> {
                     null) {
                   return const LoadingLayout();
                 }
-                if (viewModel.taskDataByStatus[AppStrings.taskStatusCompleted]!
-                    .isEmpty) {
-                  return const FallbackWidget(
-                    noDataMessage: AppStrings.noCompletedTaskData,
-                    asset: AppAssets.emptyList,
-                  );
-                }
                 return TaskListCard(
                   screenWidth: screenWidth,
                   taskData: viewModel

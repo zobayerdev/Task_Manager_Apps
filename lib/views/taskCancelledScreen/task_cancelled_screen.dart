@@ -39,13 +39,6 @@ class _TaskCancelledScreenState extends State<TaskCancelledScreen> {
                     null) {
                   return const LoadingLayout();
                 }
-                if (viewModel
-                    .taskDataByStatus[AppStrings.taskStatusCanceled]!.isEmpty) {
-                  return const FallbackWidget(
-                    noDataMessage: AppStrings.noNewCanceledData,
-                    asset: AppAssets.emptyList,
-                  );
-                }
                 return TaskListCard(
                   screenWidth: screenWidth,
                   taskData: viewModel

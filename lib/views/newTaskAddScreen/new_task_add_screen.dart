@@ -122,12 +122,6 @@ class _NewTaskAddScreenState extends State<NewTaskAddScreen> {
                     null) {
                   return const LoadingLayout();
                 }
-                if (viewModel
-                    .taskDataByStatus[AppStrings.taskStatusNew]!.isEmpty) {
-                  return const FallbackWidget(
-                      noDataMessage: AppStrings.noNewTaskData,
-                      asset: AppAssets.emptyList);
-                }
                 return TaskListCard(
                   screenWidth: screenWidth,
                   taskData:
